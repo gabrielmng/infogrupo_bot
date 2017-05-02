@@ -13,8 +13,8 @@ from telegram.contrib.botan import Botan
 import python3pickledb as pickledb
 
 # Configuration
-BOTNAME = 'usernameofbot'
-TOKEN = 'TOKEN'
+BOTNAME = 'infogrupo_bot'
+TOKEN = '291631735:AAG3x-rXXanm74iVmNb8liInX4Ngfs9P5Gw'
 BOTAN_TOKEN = 'BOTANTOKEN'
 
 help_text = 'Welcomes everyone that enters a group chat that this bot is a ' \
@@ -108,7 +108,7 @@ def welcome(bot, update):
 
     # Use default message if there's no custom one set
     if text is None:
-        text = 'Hello $username! Welcome to $title %s' \
+        text = 'Bem vindo $username! Bem vindo ao $title %s' \
                   % Emoji.GRINNING_FACE_WITH_SMILING_EYES
 
     # Replace placeholders and send message
@@ -138,7 +138,7 @@ def goodbye(bot, update):
 
     # Use default message if there's no custom one set
     if text is None:
-        text = 'Goodbye, $username!'
+        text = 'Adeus, $username!'
 
     # Replace placeholders and send message
     text = text.replace('$username',
